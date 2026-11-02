@@ -1,0 +1,14 @@
+# Build outputs
+pi_single
+pi_local
+pi_mutex
+*.o
+*.out
+
+# OS / Google Drive junk
+.DS_Store
+Icon?
+.tmp.driveupload/
+
+# Python
+*.pyc
