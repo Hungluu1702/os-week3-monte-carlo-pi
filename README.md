@@ -19,7 +19,18 @@ Task split, shared conventions and deadlines: [`docs/phan-cong-5-dau-viec.md`](d
 | `figures/` | Task 4 | Plots |
 | `report.pdf` | Task 5 | Final report |
 
-Each person edits only the files they own, so pushing straight to `main` is fine. Run `git pull` before every push.
+Each person edits only the files they own.
+
+## Workflow: branch, pull request, review
+
+`main` is protected. Nobody pushes to it directly:
+
+1. `git switch main && git pull`, then `git switch -c task<N>-<topic>` (for example `task2-pi-local`).
+2. Commit on that branch, then `git push -u origin HEAD`.
+3. Open a pull request into `main` and request a review from **@PTAxHVA (Tuấn Anh)**.
+4. Tuấn Anh reviews and merges. Do not merge your own PR.
+
+AI assistants must follow the same rules; they are written out in [`AGENTS.md`](AGENTS.md), and `CLAUDE.md`, `GEMINI.md` and `.github/copilot-instructions.md` point to it.
 
 ## Build and run
 
